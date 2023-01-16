@@ -22,7 +22,6 @@ function onInputChange() {
     if (mailInput.value || messageInput.value) {
       formData.email = mailInput.value;
       formData.message = messageInput.value;
-    //   formData[evt.target.name] = evt.target.value;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
     }
   }
@@ -54,16 +53,5 @@ function onInputChange() {
       formData.email = "";
       formData.message = "";
     }
-    // if (!mailInput.value || !messageInput.value) {
-    //   alert('Всі поля мають бути заповнені!');
-    // } else {
-    //   formData.email = mailInput.value;
-    //   formData.message = messageInput.value;
-    //   console.log(formData);
-  
-    //   evt.target.reset();
-    //   localStorage.removeItem(STORAGE_KEY);
-    //   formData.email = "";
-    //   formData.message = "";
-    // }
+    
   }
